@@ -4,6 +4,11 @@ public class SuitePresidencial extends Room{
         super(numQuarto, capacidade, preco, roomSize, typeOfRoom);
         this.salasPrivativas = numSalas;
     }
+    
+    public int getSalasPrivativas(){
+        return this.salasPrivativas;
+    }
+    
     public void exibirDetalhes(){
         super.displayDetails();
         System.out.println("\nTem Hidromassagem\nNumero de salas privativas: "+salasPrivativas);
