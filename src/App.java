@@ -59,10 +59,25 @@ public class App {
         // Exibe todos os quartos cadastrados
         System.out.println("\n--- Quartos Cadastrados ---");
         for (Room room : rooms) {
+            // Exibe os detalhes do quartos
             room.displayDetails();
+            
+            // Exibe o tipo do quarto (número inteiro que representa o tipo)
+            System.out.println("Tipo de Quarto: " + room.getTypeOfRoom());
+
+            // Exibe o número de salas privativas apenas para Suítes Presidenciais
+            if (room instanceof SuitePresidencial) {
+                SuitePresidencial suite = (SuitePresidencial) room;
+                System.out.println("Número de salas privativas: " + suite.getSalasPrivativas());
+            }
+            
             System.out.println("---------------------------");
         }
+
+        // Exibe o total de quartos cadastrados
+        System.out.println("Total de quartos cadastrados: " + rooms.size());
 
         scan.close();
     }
 }
+
