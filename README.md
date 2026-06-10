@@ -14,7 +14,7 @@ This project implements a hotel system in Java, designed as a training exercise 
 
 - **Language**: Java
 - **Type**: Educational Project
-- **Value**: 2 points (Atividade valendo 2 pontos em POO)
+
 - **Purpose**: Training in Object-Oriented Programming
 
 ## Features
