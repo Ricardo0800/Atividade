@@ -10,6 +10,7 @@ public class Room {
         setGuestCapacity(guestCapacity);
         setPricePerNight(pricePerNight);
         setRoomSize(roomSize);
+        setTypeOfRoom(typeOfRoom);
     }
 
     public int getRoomNumber() {
